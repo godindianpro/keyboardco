@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="type.js"></script>
+    </head>
+    <body>
+        <div id = "time">Timer- 00:00:00</div>
+        <div id = "alert">Typo alert</div>
+        <div id = "text"></div><br>
+        <textarea placeholder="Enter text here" onPaste="return false;" autocomplete=off></textarea>
+        <div id = "case" class = "btn" onclick = "IgnoreCase();">Ignore Case</div>
+        <div id = "stop" class = "btn" onclick = "ShowResult();">Result</div>
+        <div id = "result-page">
+            <div id = "rp-heading">RESULT</div>
+            <br>
+            <div id = "rp-rating" class = "rp-text"></div>
+            <div id = "rp-wpm" class = "rp-text"></div>
+            <div id = "rp-consistency" class = "rp-text"></div>
+            <div id = "rp-accuracy" class = "rp-text"></div>
+            <div id = "rp-replay" onclick = "Replay();">REPLAY</div>
+        </div>
+    </body>
+</html>
